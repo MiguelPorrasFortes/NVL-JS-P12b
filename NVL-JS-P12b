@@ -1,0 +1,14 @@
+function ordenarNaleatoriosEnParOImpar (n) {
+var arrayPar = [];
+var arrayImpar = [];
+for(var i=0; i < n; i++) {
+  var numero = Math.floor((Math.random() * 100) + 1);
+  if(numero%2 !=0) //si número impar
+   {arrayImpar.push(numero);}
+  else {arrayPar.push(numero);}
+}  console.log('El array de los pares es '+arrayPar);
+   console.log('El array de los impares es '+arrayImpar);
+}  
+  ordenarNaleatoriosEnParOImpar (20)
+
+
